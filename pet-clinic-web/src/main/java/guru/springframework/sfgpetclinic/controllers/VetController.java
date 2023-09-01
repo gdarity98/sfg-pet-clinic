@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by gd on 7/21/2023
  */
-@RequestMapping("/vets")
+@RequestMapping({"/vets", "/vets.html"})
 @Controller
 public class VetController {
 
