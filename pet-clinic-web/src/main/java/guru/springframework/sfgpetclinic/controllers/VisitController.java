@@ -25,7 +25,7 @@ public class VisitController {
     }
 
     @InitBinder
-    public void dataBinder(WebDataBinder dataBinder) { //Date Validation?
+    public void dataBinder(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
 
         dataBinder.registerCustomEditor(LocalDate.class, new PropertyEditorSupport() {
@@ -35,7 +35,6 @@ public class VisitController {
             }
         });
     }
-
     /**
      * Called before each and every @RequestMapping annotated method.
      * 2 goals:
